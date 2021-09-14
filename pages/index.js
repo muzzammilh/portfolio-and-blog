@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { getAllPosts } from '@api';
 
 export default function Blog(props) {
+  console.log(props);
   return (
     <DefaultLayout title={props.title} description={props.description}>
       <p>List of posts:</p>
@@ -22,13 +23,9 @@ export default function Blog(props) {
 }
 
 export async function getStaticProps() {
-  const allPosts = await getAllPosts();
-  console.log("----------");
-  console.log("DEBUG");
-  console.log("----------");
   return {
     props: {
-      posts: allPosts
+      posts: getAllPosts(),
     },
   };
 }
