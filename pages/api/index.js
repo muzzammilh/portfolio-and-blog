@@ -2,7 +2,11 @@ import fs from 'fs';
 import path from 'path';
 
 import matter from 'gray-matter';
-import marked from 'marked';
+import remark from 'remark'; // TODO
+import { html } from 'remark-html';
+import { unified } from 'unified';
+import { markdown } from 'remark-parse';
+import { highlight } from 'remark-highlight.js';
 
 export function getAllPosts() {
   // get the posts directory path
@@ -32,6 +36,20 @@ export function getAllPosts() {
     };
 
   });
+}
+
+export async function getPostBySlug(slug) {
+  const file = fs.readFileSync(path.join(process.cwd(), '_posts', `${slug}.md`), 'utf8');
+
+  const { content, data } = matter(file);
+
+  // const body = remark().use(html).processSync(content).toString();
+  const body = await unified().use(markdown).use(highlight).use(html).process(content);
+
+  return {
+    ...data,
+    body,
+  };
 }
 
 // export async function getAllPosts1() {
