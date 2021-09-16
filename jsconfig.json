@@ -4,6 +4,7 @@
     "paths": {
       "@includes/*": ["includes/*"],
       "@layouts/*": ["layouts/*"],
+      "@components/*": ["components/*"],
       "@posts/*": ["posts/*"],
       "@api": ["lib/api"]
     }
