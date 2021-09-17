@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { getAllPosts } from '@api';
 
 export default function Blog(props) {
-  console.log(props);
   return (
     <DefaultLayout title={props.title} description={props.description}>
       <p>List of posts:</p>

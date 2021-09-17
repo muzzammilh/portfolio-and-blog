@@ -1,56 +1,56 @@
-import fs from 'fs';
-import path from 'path';
+// import fs from 'fs';
+// import path from 'path';
 
-import matter from 'gray-matter';
-import remark from 'remark'; // TODO
-import { html } from 'remark-html';
-import { unified } from 'unified';
-import { markdown } from 'remark-parse';
-import { highlight } from 'remark-highlight.js';
+// import matter from 'gray-matter';
+// import remark from 'remark'; // TODO
+// import { html } from 'remark-html';
+// import { unified } from 'unified';
+// import { markdown } from 'remark-parse';
+// import { highlight } from 'remark-highlight.js';
 
-export function getAllPosts() {
-  // get the posts directory path
-  const postsDirectory = path.join(process.cwd(), '_posts');
+// export function getAllPosts() {
+//   // get the posts directory path
+//   const postsDirectory = path.join(process.cwd(), '_posts');
 
-  // read all file names from the posts directory
-  const filenames = fs.readdirSync(postsDirectory);
+//   // read all file names from the posts directory
+//   const filenames = fs.readdirSync(postsDirectory);
 
-  // read files one by one
-  return filenames.map((filename) => {
-    const file = fs.readFileSync(
-      path.join(process.cwd(), '_posts', filename),
-      'utf8'
-    );
+//   // read files one by one
+//   return filenames.map((filename) => {
+//     const file = fs.readFileSync(
+//       path.join(process.cwd(), '_posts', filename),
+//       'utf8'
+//     );
 
-    // get frontmatter
-    const { data } = matter(file);
+//     // get frontmatter
+//     const { data } = matter(file);
 
-    // get slug from filename
-    const slug = filename.replace(/\.md$/, '');
+//     // get slug from filename
+//     const slug = filename.replace(/\.md$/, '');
 
-    // return combined frontmatter and slug; build permalink
-    return {
-      ...data,
-      slug,
-      permalink: `/posts/${slug}`,
-    };
+//     // return combined frontmatter and slug; build permalink
+//     return {
+//       ...data,
+//       slug,
+//       permalink: `/posts/${slug}`,
+//     };
 
-  });
-}
+//   });
+// }
 
-export async function getPostBySlug(slug) {
-  const file = fs.readFileSync(path.join(process.cwd(), '_posts', `${slug}.md`), 'utf8');
+// export async function getPostBySlug(slug) {
+//   const file = fs.readFileSync(path.join(process.cwd(), '_posts', `${slug}.md`), 'utf8');
 
-  const { content, data } = matter(file);
+//   const { content, data } = matter(file);
 
-  // const body = remark().use(html).processSync(content).toString();
-  const body = await unified().use(markdown).use(highlight).use(html).process(content);
+//   // const body = remark().use(html).processSync(content).toString();
+//   const body = await unified().use(markdown).use(highlight).use(html).process(content);
 
-  return {
-    ...data,
-    body,
-  };
-}
+//   return {
+//     ...data,
+//     body,
+//   };
+// }
 
 // export async function getAllPosts1() {
 //   const context = require.context('../../posts', false, /\.md$/);
