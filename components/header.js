@@ -4,9 +4,8 @@ import Nav from '@components/nav';
 export default function Header() {
   return (
     <header>
-      {/* <Logo /> */}
+      <Logo />
       <Nav />
-      <p>Blog | Powered by Next.js</p>
     </header>
   );
 }
