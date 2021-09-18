@@ -8,6 +8,18 @@ export default function Footer() {
         <div className="col-auto">
           Designed and Developed by <Btn text="Muzzammil Hussain" link="/about" />
         </div>
+        {/* <div className="col-auto font-bold mt-5">
+          Credits
+        </div>
+        <div className="col-auto">
+          <a href="#" className="text-gray-500 hover:text-gray-800 pr-2" target="_blank" rel="dofollow">React.js</a>
+          <a href="#" className="text-gray-500 hover:text-gray-800 pr-2" target="_blank" rel="dofollow">Next.js</a>
+          <a href="#" className="text-gray-500 hover:text-gray-800 pr-2" target="_blank" rel="dofollow">Tailwindcss</a>
+          <a href="#" className="text-gray-500 hover:text-gray-800 pr-2" target="_blank" rel="dofollow">Vercel</a>
+          <a href="#" className="text-gray-500 hover:text-gray-800 pr-2" target="_blank" rel="dofollow">UnDraw</a>
+          <a href="#" className="text-gray-500 hover:text-gray-800 pr-2" target="_blank" rel="dofollow">React.js</a>
+          <a href="#" className="text-gray-500 hover:text-gray-800 pr-2" target="_blank" rel="dofollow">React.js</a>
+        </div> */}
         {/* <div className="mt-4 text-center">
           You can view the complete source code of the website on github
         </div> */}

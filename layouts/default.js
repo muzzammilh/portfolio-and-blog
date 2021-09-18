@@ -7,7 +7,7 @@ export default function DefaultLayout(props) {
     <main>
       <div className="container mx-auto max-w-4xl p-5 text-gray-800">
         <Head>
-          <title>{props.title}</title>
+          <title>{props.title} - Muzzammil Hussain</title>
           <meta name="description" content={props.description} />
         </Head>
         <Header />

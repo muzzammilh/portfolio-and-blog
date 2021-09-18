@@ -28,6 +28,7 @@ export default function Blog(props) {
 export function getStaticProps() {
   return {
     props: {
+      title: 'Home',
       posts: getAllPosts()
     },
   };
