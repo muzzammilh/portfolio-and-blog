@@ -6,7 +6,9 @@ import heroImage from '../images/undraw_Coding_re_iv62.png';
 export default function Hero() {
   return (
     <>
-      <Image src={heroImage} alt="Muzzammil Hussain" />
+      <div className="max-w-xl mx-auto">
+        <Image src={heroImage} alt="Muzzammil Hussain" />
+      </div>
       <div className="text-center font-bold text-4xl sm:text-6xl">
         Muzzammil Hussain
       </div>
