@@ -4,7 +4,7 @@ import Btn from '@components/btn';
 export default function Footer() {
   return (
     <footer>
-      <div className="text-center bg-gray-200 border-3 p-10 mt-5">
+      <div className="text-center bg-gray-200 border-3 p-10 mt-10">
         <div className="text-4xl font-bold">Let&apos;s talk</div>
         <div className="text-2xl mt-5">
           Would you like to work together or have any questions?
