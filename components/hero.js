@@ -22,6 +22,5 @@ export default function Hero() {
         <Btn text="Learn More" link="/about" />
       </div>
     </>
-
   );
 }

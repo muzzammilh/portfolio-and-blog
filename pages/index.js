@@ -9,7 +9,7 @@ export default function Blog(props) {
   return (
     <DefaultLayout title={props.title} description={props.description}>
       <Hero />
-      <p>List of posts:</p>
+      {/* <p>List of posts:</p>
       <ul>
         {props.posts.map(function (post, idx) {
           return (
@@ -20,7 +20,7 @@ export default function Blog(props) {
             </li>
           );
         })}
-      </ul>
+      </ul> */}
     </DefaultLayout>
   );
 }
