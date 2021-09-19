@@ -9,6 +9,9 @@ export default function Hero() {
       <div className="max-w-xl mx-auto">
         <Image src={heroImage} alt="Muzzammil Hussain" />
       </div>
+      <div className="text-center text-1xl sm:text-2xl">
+        Hello, my name is 
+      </div>
       <div className="text-center font-bold text-4xl sm:text-6xl">
         Muzzammil Hussain
       </div>
