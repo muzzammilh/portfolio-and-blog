@@ -5,7 +5,7 @@ import Footer from '@components/footer';
 export default function DefaultLayout(props) {
   return (
     <main>
-      <div className="container mx-auto max-w-4xl p-5 text-gray-800">
+      <div className="container mx-auto max-w-4xl p-5 text-gray-800 animate__animated animate__fadeIn">
         <Head>
           <title>{props.title} - Muzzammil Hussain</title>
           <meta name="description" content={props.description} />
