@@ -8,3 +8,15 @@
 body {
   font-family: 'Merriweather', serif;
 }
+
+.post p {
+  @apply mt-4 mb-4;
+}
+
+.post ul {
+  @apply list-disc pl-10;
+}
+
+.post a {
+  @apply border-b-2 border-gray-600;
+}
