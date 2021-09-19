@@ -9,7 +9,7 @@ body {
   font-family: 'Merriweather', serif;
 }
 
-.post p {
+/* .post p {
   @apply mt-4 mb-4;
 }
 
@@ -19,4 +19,4 @@ body {
 
 .post a {
   @apply border-b-2 border-gray-600;
-}
+} */

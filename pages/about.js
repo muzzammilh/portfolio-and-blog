@@ -20,7 +20,7 @@ export default function Blog(props) {
           className='object-cover mr-2 rounded-full'
         />
       </div>
-      <div className="post mt-10" dangerouslySetInnerHTML={{ __html: props.post.body }} />
+      <div className="post prose max-w-none mt-10" dangerouslySetInnerHTML={{ __html: props.post.body }} />
     </DefaultLayout>
   );
 }
