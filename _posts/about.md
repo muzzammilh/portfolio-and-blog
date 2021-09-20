@@ -3,8 +3,7 @@ title: "About"
 description: "Information about Muzzammil Hussain"
 date: "2021-03-24"
 lastmod: "2021-03-29"
-aliases: ["about-me"]
-author: "Muzzammil Hussain"
+type: "page"
 ---
 Greetings! I'm Muzzammil Hussain and I'm a full stack developer, solutions architect, and consultant. 
 I live in Lahore, Pakistan with my wife and two adorable children.
