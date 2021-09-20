@@ -9,7 +9,6 @@ import profilePicture from '../images/profile_picture.webp';
 import { getPostBySlug } from '@api';
 
 export default function Blog(props) {
-  console.log(props);
   return (
     <DefaultLayout title={props.post.title} description={props.post.description}>
       <Heading text={props.post.title} />
