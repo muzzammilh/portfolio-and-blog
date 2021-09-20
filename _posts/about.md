@@ -16,15 +16,24 @@ I have experience designing and developing what I refer to as "technically sophi
 Depending on the business requirement, I have developed monolithic and microservice architectures. 
 I believe in reaching the market fast, even if your technology is not mature, and continuing to improve what is built based on market insights and user feedback.
 
-My pride comes from the fact that I am good at what I do
-* Full-stack Development
+My pride comes from the fact that I am good at what I do, i.e
+<!-- * Full-stack Development
 * Product Development 
 * Process Improvements 
 * Relationship Management 
 * Solution Architecture 
 * Change Lifecycles 
 * Mentoring
-* Leadership
+* Leadership -->
+
+| 								 |  				 |
+| ---------------------- | ----------------------- |
+|	Full-stack Development | Product Development	   |
+| Process Improvements   | Relationship Management |
+| Solutions Architecture | Change Lifecycles       |
+| Mentoring              | Leadership              |
+|   |   |
+
 
 You can download my [C.V](/muzzammil-hussain-cv.pdf) and find out what kind of projects I have done in the past. Should I be of any use to you, feel free to contact me through my [email](mailto:muzzammilz@gmail.com) or [Linkedin](https://www.linkedin.com/in/muzzammilz/).
 
