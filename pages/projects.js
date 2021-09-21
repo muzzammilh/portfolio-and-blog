@@ -1,7 +1,7 @@
 import DefaultLayout from '@layouts/default';
 import CommingSoon from '@components/coming';
 
-export default function Blog(props) {
+export default function Projects(props) {
   return (
     <DefaultLayout title={props.title} description={props.description}>
       <CommingSoon />
@@ -12,7 +12,7 @@ export default function Blog(props) {
 export function getStaticProps() {
   return {
     props: {
-      title: 'Posts',
+      title: 'Projects',
       // posts: getAllPosts()
     },
   };

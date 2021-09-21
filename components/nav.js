@@ -15,7 +15,7 @@ export default function Nav() {
             <div className="flex space-x-7">
               <div className="flex items-center space-x-3">
                 <Menu link='/' text='Home' />
-                <Menu link='/posts' text='Posts' />
+                <Menu link='/projects' text='Projects' />
                 <Menu link='/about' text='About' />
               </div>
             </div>
