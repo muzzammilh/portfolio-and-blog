@@ -17,6 +17,13 @@ export default function Blog(props) {
           <Publication {...post} key={idx} />
         );
       })}
+      <div className="text-center text-xl">
+        <Link href="" passHref>
+          <a>
+            View all publications
+          </a>
+        </Link>
+      </div>
     </DefaultLayout>
   );
 }
