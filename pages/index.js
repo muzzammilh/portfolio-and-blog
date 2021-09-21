@@ -5,7 +5,7 @@ import Hero from '@components/hero';
 import Heading from '@components/heading';
 import Publication from '@components/publication';
 
-import { getAllPosts, getLatestPosts } from '@lib/api';
+import { getLatestPosts } from '@lib/api';
 
 export default function Blog(props) {
   return (
