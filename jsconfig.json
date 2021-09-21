@@ -6,7 +6,7 @@
       "@layouts/*": ["layouts/*"],
       "@components/*": ["components/*"],
       "@posts/*": ["posts/*"],
-      "@api": ["lib/api"],
+      "@lib/*": ["lib/*"],
       "@images": ["images/*"]
     }
   }

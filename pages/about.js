@@ -6,7 +6,7 @@ import Heading from '@components/heading';
 
 import profilePicture from '../images/profile_picture.webp';
 
-import { getPostBySlug } from '@api';
+import { getPostBySlug } from '@lib/api';
 
 export default function Blog(props) {
   return (

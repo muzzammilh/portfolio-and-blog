@@ -3,7 +3,7 @@ import Link from 'next/link';
 import DefaultLayout from '@layouts/default';
 import Hero from '@components/hero';
 
-import { getAllPosts } from '@api';
+import { getAllPosts, getLatestPosts } from '@lib/api';
 
 export default function Blog(props) {
   return (
@@ -26,7 +26,9 @@ export default function Blog(props) {
   );
 }
 
-export function getStaticProps() {
+export async function getStaticProps() {
+  const d = await getLatestPosts();
+  console.log(d);
   return {
     props: {
       title: 'Home',
