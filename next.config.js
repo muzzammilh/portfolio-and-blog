@@ -1,6 +1,9 @@
 module.exports = {
   reactStrictMode: true,
   target: 'serverless',
+  images: {
+    domains: ['cdn.hashnode.com'],
+  },
   /** 
    * Fix for cannot resolve module fs
    * https://github.com/vercel/next.js/issues/7755#issuecomment-916022379
