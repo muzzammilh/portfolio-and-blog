@@ -21,7 +21,7 @@ export default function Blog(props) {
   return (
     <DefaultLayout title={props.title} description={props.description}>
       <Hero />
-      <Heading text="Latest Publications" />
+      {/* <Heading text="Latest Publications" />
       {posts.map(function (post, idx) {
         return (
           <Publication {...post} key={idx} />
@@ -33,7 +33,7 @@ export default function Blog(props) {
             View all publications
           </a>
         </Link>
-      </div>
+      </div> */}
     </DefaultLayout>
   );
 };
