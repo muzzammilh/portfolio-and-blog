@@ -57,7 +57,6 @@
 //   const posts = [];
 //   for (const key of context.keys()) {
 //     const post = key.slice(2);
-//     console.log(post);
 //     const content = await import(`../../posts/${post}`);
 //     const meta = matter(content.default);
 //     posts.push({
