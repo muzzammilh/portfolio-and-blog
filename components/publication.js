@@ -16,7 +16,7 @@ export default function Publication(post) {
 
   return (
     <>
-      <div className="mt-10 mb-10 text-center bg-gray-50">
+      <div className="mt-10 mb-10 text-center bg-gray-50 animate__animated animate__bounceIn">
         <div className="mb-10 border-b-2 border-gray-200"></div>
         <div className="">{prettyDate}</div>
         <Link href={postURL} passHref>

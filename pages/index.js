@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 import DefaultLayout from '@layouts/default';
@@ -8,11 +9,20 @@ import Publication from '@components/publication';
 import { getLatestPosts } from '@lib/api';
 
 export default function Blog(props) {
+
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    getLatestPosts().then( (response) => {
+      setPosts(response);
+    });
+  });
+
   return (
     <DefaultLayout title={props.title} description={props.description}>
       <Hero />
       <Heading text="Latest Publications" />
-      {props.posts.map(function (post, idx) {
+      {posts.map(function (post, idx) {
         return (
           <Publication {...post} key={idx} />
         );
@@ -26,13 +36,13 @@ export default function Blog(props) {
       </div>
     </DefaultLayout>
   );
-}
+};
 
 export async function getStaticProps() {
   return {
     props: {
       title: 'Home',
-      posts: await getLatestPosts()
+      // posts: await getLatestPosts()
     },
   };
 }
