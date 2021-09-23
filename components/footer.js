@@ -1,6 +1,7 @@
-import Link from 'next/link';
-
 import Btn from '@components/btn';
+
+import { LINKEDIN_PROFILE_URL, GITHUB_PROFILE_URL } from 'settings';
+
 export default function Footer() {
   return (
     <footer>
@@ -10,9 +11,8 @@ export default function Footer() {
           Would you like to work together or have any questions?
         </div>
         <div className="mt-5 space-x-5">
-          <Btn text="LinkedIn" link="/about" />
-          <Btn text="GitHub" link="/about" />
-          {/* <Btn text="LinkedIn" link="/about" /> */}
+          <Btn text="LinkedIn" link={LINKEDIN_PROFILE_URL} />
+          <Btn text="GitHub" link={GITHUB_PROFILE_URL} />
         </div>
       </div>
       <div className="flex mt-4 justify-center items-center flex-col">
