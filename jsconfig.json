@@ -7,7 +7,7 @@
       "@components/*": ["components/*"],
       "@posts/*": ["posts/*"],
       "@lib/*": ["lib/*"],
-      "@images": ["images/*"]
+      "@images/*": ["public/images/*"]
     }
   }
 } 

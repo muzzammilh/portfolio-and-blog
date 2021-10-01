@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 import Btn from './btn';
-import comingSoonImage from '../images/undraw_stars_re_6je7.png';
+import comingSoonImage from '@images/undraw_stars_re_6je7.png';
 
 export default function CommingSoon(props) {
   return (

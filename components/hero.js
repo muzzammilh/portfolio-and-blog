@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 import Btn from '@components/btn';
-import heroImage from '../images/undraw_Coding_re_iv62.png';
+import heroImage from '@images/undraw_Coding_re_iv62.png';
 
 export default function Hero() {
   return (

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import DefaultLayout from '@layouts/default';
 import Heading from '@components/heading';
 
-import profilePicture from '../images/profile_picture.webp';
+import profilePicture from '@images/profile_picture.webp';
 
 import { getPostBySlug } from '@lib/api';
 
